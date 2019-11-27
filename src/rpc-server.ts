@@ -1,6 +1,8 @@
 import invariant from "invariant";
-import express, { Request, Response } from "express";
+import express, { Request as ExpressRequest, Response } from "express";
 import { Server } from "http";
+
+export type Request = ExpressRequest;
 
 export type RpcMethod = (req: Request, ...args: any[]) => any;
 
