@@ -1,6 +1,6 @@
 {
   "name": "ts-json-rpc-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "src/rpc-server.js",
   "scripts": {
@@ -20,5 +20,6 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "files": ["src/*.js", "src/*.d.ts"]
 }
