@@ -41,8 +41,10 @@ export function createRpcHandler(
         JSON.stringify({
           jsonrpc: "2.0",
           id: req.body.id,
-          code: -32001,
-          message: e.toString()
+	  error: {
+            code: -32001,
+            message: e.toString()
+	  }
         })
       );
     }
